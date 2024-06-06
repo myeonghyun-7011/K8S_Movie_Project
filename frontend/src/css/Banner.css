@@ -1,0 +1,18 @@
+.banner {
+  margin-top: 10%;
+  width: 100%; /* 화면 전체 너비를 차지하도록 설정 */
+  height: 40vh;
+  padding: 20px; /* 내부 여백 추가 */  
+  text-align: center; /* 내용 가운데 정렬 */
+  box-sizing: border-box; /* padding을 요소의 전체 너비에 포함시킵니다. */
+  color: white;
+}
+
+.banner h2 {
+  font-size: 50px; /* 제목 글자 크기 설정 */
+}
+
+.banner p {
+  font-size: 30px; /* 내용 글자 크기 설정 */
+  color: white; /* 내용 글자 색상 설정 */
+}

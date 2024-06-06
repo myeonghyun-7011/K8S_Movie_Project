@@ -1,0 +1,74 @@
+.login-container {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.custom-input {
+  margin-bottom: 20px;
+}
+
+.custom-input label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.custom-input input {
+  width: 80%;
+  height: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+
+.custom-input button {
+  width: 80%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(247, 247, 24, 0.664);
+  color: #fff;
+  cursor: pointer;
+}
+
+div .social-login {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.social-login {
+  display: flex;
+  flex-direction: row;
+}
+
+.social-login button {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* 이미지와 텍스트 중앙 정렬 */
+  padding: 8px; /* 버튼 내부 여백 조정 */
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  background-color: #f9f9f9;
+}
+
+.social-login button img {
+  width: 45px; /* 이미지 크기 조정 */
+  height: 45px; /* 이미지 크기 조정 */
+}
+
+.forgot-password {
+  text-align: center;
+  margin-top: 50px;
+}

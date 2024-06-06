@@ -1,0 +1,173 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../img/cgv.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.5; /* 이미지 투명도 설정 */
+  z-index: -1; /* 다른 요소 뒤에 배경 이미지 위치 */
+}
+
+.containerd {
+  margin-top: 20px;
+  margin: 0 auto;
+  padding: 10px; /* 테두리 패딩 줄이기 */
+  max-width: 600px; /* 최대 너비 설정으로 가운데 정렬 유지 */
+  box-sizing: border-box; /* 박스 크기 계산 방식 설정 */
+  background-color: rgba(255, 255, 255, 0.8); /* 컨테이너 배경색 및 투명도 설정 */
+  border-radius: 8px;
+}
+
+.title {
+  text-align: center;
+  padding-top: 30px;
+  font-size: 24px; /* 제목 폰트 크기 줄이기 */
+}
+
+p {
+  font-size: 16px; /* 기본 p 태그의 폰트 크기 줄이기 */
+}
+
+.date-picker {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.date-picker label {
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.date-picker input[type="date"] {
+  padding: 8px;
+  font-size: 16px;
+}
+
+.movie-container {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px; /* 테두리 패딩 줄이기 */
+  box-sizing: border-box; /* 박스 크기 계산 방식 설정 */
+}
+
+.subtitle {
+  font-size: 20px; /* 부제목 폰트 크기 줄이기 */
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.movie-rank {
+  font-size: 30px;
+}
+
+.ticket-count {
+  font-size: 20px;
+  color: #7aa7d6;
+}
+
+.movie-item {
+  width: 70%;
+  margin: 0 auto; /* 영화 아이템을 가운데 정렬 */
+  cursor: pointer;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  transition: background-color 0.3s ease;
+  font-size: 14px; /* 영화 아이템의 폰트 크기 줄이기 */
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+  .movie-item {
+    width: 90%; /* 작은 화면에서는 너비를 90%로 설정 */
+    font-size: 12px; /* 작은 화면에서 영화 아이템 폰트 크기 줄이기 */
+  }
+
+  .title {
+    font-size: 20px; /* 작은 화면에서 제목 폰트 크기 줄이기 */
+  }
+
+  p {
+    font-size: 14px; /* 작은 화면에서 기본 p 태그의 폰트 크기 줄이기 */
+  }
+}
+
+.movie-item:hover {
+  background-color: #f9f9f9;
+}
+
+.movie-item p {
+  margin: 0;
+  padding: 10px 0; /* 영화 랭크와 제목에 패딩 추가 */
+}
+
+.movie-ra {
+  font-size: 16px; /* 영화 제목 폰트 크기 줄이기 */
+  font-weight: bold;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 50px; /* 버튼 패딩 추가 */
+}
+
+.button {
+  padding: 10px 20px;
+  font-size: 14px; /* 버튼 폰트 크기 줄이기 */
+  color: #fff;
+  background-color: #eb329eab;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none; /* 링크 밑줄 제거 */
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+.ticket-co {
+  font-size: 14px; /* 티켓 개수 폰트 크기 줄이기 */
+}
+
+.scroll-button {
+  position: fixed;
+  right: 20px;
+  padding: 10px 20px;
+  font-size: 13px;
+  cursor: pointer;
+  background-color: white;
+  color: #333333;
+  border: solid 0.5px #333333;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  z-index: 1000;
+}
+
+.scroll-button:hover {
+  border: solid 1px #8c8c8c;
+  background-color: #ffffff;
+  color: #333333;
+}
+
+.scroll-button:first-of-type {
+  bottom: 60px;
+}
+
+.scroll-button:last-of-type {
+  bottom: 20px;
+}
